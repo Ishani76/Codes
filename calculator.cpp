@@ -9,8 +9,13 @@ public :
  double multiply (double a , double b)
  {return a*b;}
  double divide (double a , double b)
- {return a/b;}
+ { if (b == 0) {cout<<"Invalid input "<<endl;}
+ else {
+ return a/b;}
 };
+};
+
+
 int main()
 
 { calculator calc;
