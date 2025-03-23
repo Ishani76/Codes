@@ -1,4 +1,5 @@
 #include<iostream>
+#include<cmath>
 using namespace std;
 class calculator{
 public :
@@ -9,8 +10,8 @@ public :
  double multiply (double a , double b)
  {return a*b;}
  double divide (double a , double b)
- { if (b == 0) {cout<<"Invalid input "<<endl;}
- else {
+ { if (b == 0) {cout<<"Invalid input "<<endl;
+ return NAN ;
  return a/b;}
 };
 };
@@ -31,7 +32,9 @@ cout<<"sum="<<calc.add(a,b)<<endl;
 } 
 else if (c==2){cout << "difference ="<<calc.subtract(a,b)<<endl;}
 else if (c==3){cout << "Product ="<<calc.multiply(a,b)<<endl;}
-else if (c==4){cout << "Quotient ="<<calc.divide(a,b)<<endl;}
+else if (c==4){double result = calc.divide(a,b); 
+    if (!isnan(result)){cout << "Quotient="<<result<<endl;}
+}
 else {
     cout<<"Invalid choice!"<<endl;
 }
