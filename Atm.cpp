@@ -24,12 +24,12 @@ int main(){
                 if (amount>0){balance += amount;
                    cout<<amount<<" "<<"Deposited Succesfully"<<endl;
                    cout<<"Available balance="<<" "<<balance<<endl;}
-                   else {cout<<"Invalid amount entered;"<<endl;}}
+                   else {cout<<"Invalid amount entered"<<endl;}}
         else if (choice == 3)
                  {cout<<"Enter amount"<<endl;
                  cin>>amount;
         if (amount>balance){
-            cout<<"Insufficient amount<<"<<endl;}
+            cout<<"Insufficient amount"<<endl;}
           else if (amount<= 0) {
                 cout<<"Invalid amount."<<endl;}
                 else { balance -= amount;
