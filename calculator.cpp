@@ -10,7 +10,7 @@ public :
  double multiply (double a , double b)
  {return a*b;}
  double divide (double a , double b)
- { if (b == 0) {cout<<"Invalid input "<<endl;
+ { if (b == 0) {cout<<"Invalid input, Please check the value of b "<<endl;
  return NAN ;
  return a/b;}
 };
