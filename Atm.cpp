@@ -22,7 +22,8 @@ int main(){
                 {cout<<"Enter amount"<<endl;
                 cin>>amount;
                 if (amount>0){balance += amount;
-                   cout<<amount<<" "<<"Deposited Succesfully"<<endl;}
+                   cout<<amount<<" "<<"Deposited Succesfully"<<endl;
+                   cout<<"Available balance="<<" "<<balance<<endl;}
                    else {cout<<"Invalid amount entered;"<<endl;}}
         else if (choice == 3)
                  {cout<<"Enter amount"<<endl;
@@ -33,6 +34,7 @@ int main(){
                 cout<<"Invalid amount."<<endl;}
                 else { balance -= amount;
                 cout<<amount<<" " <<"Withdrawn Succesfully."<<endl;}
+                cout<<"Available balance="<<" "<<balance<<endl;
                  }
        else if  (choice == 4){
     cout<<"Thankyou"<<" "<<name<<" " <<"Please visit again!!"<<endl;}
